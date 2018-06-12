@@ -14,9 +14,15 @@ public class SalesforceApplication {
 	@Value("${amazonProperties.endpointUrl}")
 	private String endpointUrl;
 
-	@RequestMapping("/jesus")
+	@RequestMapping("/")
 	@ResponseBody
 	String home() {
+		return "MAIN!";
+	}
+
+	@RequestMapping("/jesus")
+	@ResponseBody
+	String other() {
 		return "HI HI HI!";
 	}
 
