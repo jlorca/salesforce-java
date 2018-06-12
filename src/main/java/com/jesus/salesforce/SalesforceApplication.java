@@ -14,13 +14,13 @@ public class SalesforceApplication {
 	@Value("${amazonProperties.endpointUrl}")
 	private String endpointUrl;
 
-	public static void main(String[] args) {
-		SpringApplication.run(SalesforceApplication.class, args);
-	}
-
-	@RequestMapping("/")
+	@RequestMapping("/jesus")
 	@ResponseBody
 	String home() {
 		return "HI HI HI!";
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(SalesforceApplication.class, args);
 	}
 }
