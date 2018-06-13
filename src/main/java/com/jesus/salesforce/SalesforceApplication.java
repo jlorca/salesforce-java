@@ -79,11 +79,12 @@ public class SalesforceApplication {
 		org.apache.commons.httpclient.HttpClient httpClient = new org.apache.commons.httpclient.HttpClient();
 		GetMethod getMethod = new GetMethod(restUrl + "/JesusAccounts");
 		getMethod.setRequestHeader("Authorization", "Bearer " + sessionId);
-
+System.out.println("FERMIN ANTES DE LA REQUEST. sessionId = " + sessionId);
 		String responseBody = null;
 		try {
 			httpClient.executeMethod(getMethod);
 			responseBody = getMethod.getResponseBodyAsString();
+System.out.println("FERMIN FUE BIEN LA REQUEST. responseBody = " + responseBody);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -133,7 +134,7 @@ public class SalesforceApplication {
 		} catch (JSONException jsonException) {
 			// Handle JSON exception
 		}
-
+System.out.println("FERMIN SUCCESSFULLY LOGIN!!");
 		// release connection
 		httpPost.releaseConnection();
 	}
