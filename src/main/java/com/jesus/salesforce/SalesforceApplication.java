@@ -15,19 +15,19 @@ import java.io.IOException;
 @Controller
 public class SalesforceApplication {
 
-	@Value("${amazonProperties.environment}")
+	@Value("${salesforceCredentials.environment}")
 	private String environment;
 
-	@Value("${amazonProperties.clientId}")
+	@Value("${salesforceCredentials.clientId}")
 	private String clientId;
 
-	@Value("${amazonProperties.clientSecret}")
+	@Value("${salesforceCredentials.clientSecret}")
 	private String clientSecret;
 
-	@Value("${amazonProperties.redirectUri}")
+	@Value("${salesforceCredentials.redirectUri}")
 	private String redirectUri;
 
-	@Value("${amazonProperties.restUrl}")
+	@Value("${salesforceCredentials.restUrl}")
 	private String restUrl;
 
 	@RequestMapping("/")
