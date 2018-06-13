@@ -116,7 +116,7 @@ System.out.println("FERMIN loginURL = " + loginURL);
 
 		// verify response is HTTP OK
 		int statusCode = response.getStatusLine().getStatusCode();
-System.debug("FERMIN statusCode = " + statusCode);
+System.out.println("FERMIN statusCode = " + statusCode);
 		if (statusCode != HttpStatus.SC_OK) {
 			System.out.println("Error authenticating to Force.com: "+statusCode);
 			return;
