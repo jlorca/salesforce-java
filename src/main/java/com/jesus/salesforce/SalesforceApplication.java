@@ -101,7 +101,7 @@ System.out.println("FERMIN FUE BIEN LA REQUEST. responseBody = " + responseBody)
 				"&client_secret=" + clientSecret +
 				"&username=" + username +
 				"&password=" + password;
-
+System.out.println("FERMIN loginURL = " + loginURL);
 		HttpPost httpPost = new HttpPost(loginURL);
 		HttpResponse response = null;
 
@@ -115,7 +115,8 @@ System.out.println("FERMIN FUE BIEN LA REQUEST. responseBody = " + responseBody)
 		}
 
 		// verify response is HTTP OK
-		final int statusCode = response.getStatusLine().getStatusCode();
+		int statusCode = response.getStatusLine().getStatusCode();
+System.debug("FERMIN statusCode = " + statusCode);
 		if (statusCode != HttpStatus.SC_OK) {
 			System.out.println("Error authenticating to Force.com: "+statusCode);
 			return;
