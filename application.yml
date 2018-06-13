@@ -4,5 +4,5 @@ salesforceCredentials:
   clientSecret: 817149208465114697
   grantService: /services/oauth2/token?grant_type=password
   username: jesus-salesforce-java-00@gmail.com
-  password: lorkytest02
+  password: lorkytest02ceQJPP7jsn7ovnDJhuOW02v1A
   restUrl: https://eu8.salesforce.com/services/apexrest
