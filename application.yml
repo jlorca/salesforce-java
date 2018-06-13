@@ -1,4 +1,4 @@
-salesforceCredentials:
+salesforce-credentials:
   loginUrl: https://login.salesforce.com
   clientId: 3MVG9TSaZ8P6zP1o1A7P_A_jpGGdzO3mLKxAQ0jAEqMOqLj6FciCOe1jME9rCY_yxFAgHDKSZj4CaSuEhIogK
   clientSecret: 817149208465114697
