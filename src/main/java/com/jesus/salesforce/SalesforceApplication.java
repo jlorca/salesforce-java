@@ -41,7 +41,7 @@ public class SalesforceApplication {
 	String other() {
 		HttpClient httpclient = new HttpClient();
 		GetMethod getMethod = new GetMethod(restUrl);
-		getMethod.setRequestHeader("Authorization", "OAuth " + clientId);
+		getMethod.setRequestHeader("Authorization", "Bearer " + clientId);
 //		getMethod.addParameter("grant_type","authorization_code");
 //
 //		// For session ID instead of OAuth 2.0, use "grant_type", "password"
