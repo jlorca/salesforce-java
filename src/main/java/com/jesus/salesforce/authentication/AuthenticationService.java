@@ -6,7 +6,6 @@ import com.jesus.salesforce.dtos.ApplicationConfigs;
 
 public class AuthenticationService {
 
-    //@Autowired
     private static AuthenticationServiceImpl authenticationServiceImpl;
 
     public static SalesforceAuthentication getSalesforceAuthentication(ApplicationConfigs applicationConfigs) {

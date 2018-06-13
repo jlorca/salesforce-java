@@ -24,7 +24,7 @@ public class AuthenticationServiceImpl implements IAuthenticationService {
 
         String loginURL = generateLoginUrl(applicationConfigs);
 
-        // to login a post request is required
+        // to login, a post request is required
         HttpPost httpPost = new HttpPost(loginURL);
 
         HttpResponse response = null;
