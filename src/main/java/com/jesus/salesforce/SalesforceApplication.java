@@ -68,7 +68,7 @@ public class SalesforceApplication {
 	@RequestMapping("/")
 	@ResponseBody
 	String home() {
-		return "MAIN!";
+		return "MAINN!";
 	}
 
 	@RequestMapping("/jesus")
