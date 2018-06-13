@@ -109,11 +109,11 @@ System.out.println("FERMIN loginURL = " + loginURL);
 			// Execute the login POST request
 			response = httpclient.execute(httpPost);
 		} catch (ClientProtocolException cpException) {
-			// Handle protocol exception
+			System.out.println("FERMIN cpException");
 		} catch (IOException ioException) {
-			// Handle system IO exception
+			System.out.println("FERMIN ioException");
 		}
-
+System.out.println("FERMIN login response = " + response);
 		// verify response is HTTP OK
 		int statusCode = response.getStatusLine().getStatusCode();
 System.out.println("FERMIN statusCode = " + statusCode);
