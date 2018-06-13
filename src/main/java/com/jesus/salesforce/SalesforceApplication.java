@@ -18,7 +18,7 @@ public class SalesforceApplication {
 	@Value("${salesforceCredentials.environment}")
 	private String environment;
 
-	@Value("${salesforceCredentials.clientId}")
+	@Value("${salesforceCredentials.clientId2}")
 	private String clientId;
 
 	@Value("${salesforceCredentials.clientSecret}")
