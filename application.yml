@@ -1,5 +1,6 @@
-amazonProperties:
-  endpointUrl: https://s3.us-east-2.amazonaws.com
-  accessKey: XXXXXXXXXXXXXXXXX
-  secretKey: XXXXXXXXXXXXXXXXXXXXXXXXXX
-  bucketName: your-bucket-name
+salesforceCredentials:
+  environment: https://login.salesforce.com/services/oauth2/token
+  clientId: 3MVG9TSaZ8P6zP1o1A7P_A_jpGGdzO3mLKxAQ0jAEqMOqLj6FciCOe1jME9rCY_yxFAgHDKSZj4CaSuEhIogK
+  clientSecret: 817149208465114697
+  redirectUri: https://jesus-salesforce-java-01.herokuapp.com/oauth/_callback
+  restUrl: https://eu8.salesforce.com/services/apexrest
