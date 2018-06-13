@@ -40,7 +40,7 @@ public class SalesforceApplication {
 	@ResponseBody
 	String other() {
 		HttpClient httpclient = new HttpClient();
-		GetMethod getMethod = new GetMethod(restUrl);
+		GetMethod getMethod = new GetMethod(restUrl + "/JesusAccounts");
 		getMethod.setRequestHeader("Authorization", "Bearer " + clientId);
 //		getMethod.addParameter("grant_type","authorization_code");
 //
