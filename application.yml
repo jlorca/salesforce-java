@@ -1,7 +1,8 @@
 salesforceCredentials:
-  environment: https://login.salesforce.com/services/oauth2/token
+  loginUrl: https://login.salesforce.com
   clientId: 3MVG9TSaZ8P6zP1o1A7P_A_jpGGdzO3mLKxAQ0jAEqMOqLj6FciCOe1jME9rCY_yxFAgHDKSZj4CaSuEhIogK
-  clientId2: 00D0N000001cECt!AQ0AQDEJtn_KrdzM6SaDKzZE7L8S2R0VD33BghaHgW9KW4ZikCToA.rot1p77H9O0s5rNX0My95Ep88TlDiO_DxdbxZoIONg
   clientSecret: 817149208465114697
-  redirectUri: https://jesus-salesforce-java-01.herokuapp.com/oauth/_callback
+  grantService: /services/oauth2/token?grant_type=password
+  username: jesus-salesforce-java-00@gmail.com
+  password: lorkytest02
   restUrl: https://eu8.salesforce.com/services/apexrest
