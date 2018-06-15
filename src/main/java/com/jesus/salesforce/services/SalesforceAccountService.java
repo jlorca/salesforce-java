@@ -17,4 +17,12 @@ public class SalesforceAccountService {
     public List<SalesforceAccount> findAllSalesforceAccount() {
         return salesforceAccountRepository.findAll();
     }
+
+    public SalesforceAccount saveSalesforceAccount(SalesforceAccount salesforceAccount) {
+        if(salesforceAccount != null) {
+            salesforceAccount = salesforceAccountRepository.save(salesforceAccount);
+        }
+
+        return salesforceAccount;
+    }
 }

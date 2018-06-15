@@ -6,27 +6,27 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "SalesforceAccounts")
 public class SalesforceAccount {
 
-    @Id private String Id;
-    private String Name;
+    private String id;
+    private String name;
 
     public SalesforceAccount(String id, String name) {
-        Id = id;
-        Name = name;
+        this.id = id;
+        this.name = name;
     }
 
     public String getId() {
-        return Id;
+        return id;
     }
 
     public void setId(String id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 }

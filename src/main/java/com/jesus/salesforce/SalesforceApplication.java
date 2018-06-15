@@ -71,6 +71,13 @@ public class SalesforceApplication {
 		}
 	}
 
+	@RequestMapping("/accountsnew")
+	@ResponseBody
+	public SalesforceAccount saveSalesforceAccount() {
+		return salesforceAccountService.saveSalesforceAccount(new SalesforceAccount("2", "acc2"));
+
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(SalesforceApplication.class, args);
 	}
